@@ -16,7 +16,7 @@ body {
 }
 #box{
 		font-size:20px;
-		padding-top:65px;
+		padding-top:20px;
 		width:300px;
 		height:300px;
 		background-color:lightskyblue;
@@ -41,16 +41,12 @@ body {
 	#ma{
 		color:white;
 	}
-	#tha{
-		color:white;
-		padding-top: 45%;
-	}
 </style>
 </head>
 <body>
-	<h4 id="ma">Give the Date in MM/DD/YYYY</h4>
 	<div id="box">
 	<center>
+		<h4 id="ma">Give the Date in MM/DD/YYYY</h4>
 		<label>Date:</label>
 		<input type="text" id="date" placeholder="MM/DD/YYYY" >
 		<br>
@@ -61,7 +57,6 @@ body {
 		<p id="res"> </p>
 	</center>
 	</div>
-	<h4 id="tha">Thanks for Visiting | Designed by Ganesh</h4>
 	<script>
 	function day()
 	{
@@ -71,6 +66,7 @@ body {
 			document.getElementById('res').innerText = "Give the Date";
 			return;
 		}
+		document.getElementById('ma').innerHTML=" ";
 		let b=new Date(a);
 		let c=b.getDay();
 		let d=[" SUNDAY"," MONDAY"," TUESDAY"," WEDNESDAY"," THURSDAY"," FIRDAY"," SATURDAY"];
