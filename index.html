@@ -29,6 +29,27 @@ body {
 		text-align:center;
 		line-height:20px;
 	}
+	@media only screen and (max-width: 600px) {
+      /* Styles for screens with a width of 600 pixels or less (typical mobile devices) */
+      body {
+		background-color: peachpuff;
+	  }
+		#box{
+			font-size:20px;
+			padding-top:20px;
+			width:300px;
+			height:300px;
+			background-color:lightskyblue;
+			top:50%;
+			left:50%;
+			position:absolute;
+			transform:translate(-50%,-50%);
+			box-sizing:border-box;
+			border-radius:10px;
+			text-align:center;
+			line-height:20px;
+		}
+    }
 	#bu{
 		cursor:pointer;
 		font-size: large;
